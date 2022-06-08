@@ -1,0 +1,5 @@
+n=input()
+k=n.split()
+e=(i[::-1]for i in k)
+b=' '.join(e)
+print(b)
