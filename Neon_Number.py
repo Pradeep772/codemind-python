@@ -1,12 +1,11 @@
 a=int(input())
+b=a*a
 sum=0
-sqt=a*a
-while(sqt!=0):
-    d=sqt%10
+while(b>0):
+    d=b%10
     sum=sum+d
-    sqt=sqt//10
-
+    b=b//10
 if(sum==a):
-    print('Neon Number')
+    print("Neon Number")
 else:
-    print('Not Neon Number')
+    print("Not Neon Number")
