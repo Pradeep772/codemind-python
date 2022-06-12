@@ -1,8 +1,11 @@
 n=int(input())
-temp=n
-arr=[]
-while n>0:
+l=[]
+m=0
+while(n>0):
     d=n%10
-    arr.append(d)
+    l.append(d)
     n=n//10
-print(max(arr))
+for i in range(len(l)):
+    if l[i]>m:
+        m=l[i]
+print(m)        
