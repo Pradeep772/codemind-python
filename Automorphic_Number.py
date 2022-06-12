@@ -1,9 +1,11 @@
 import math
 n=int(input())
-b=len(str(n))
-c=int(n*n)
-d=c%(pow(10,b))
+b=int(n**2)
+num_of_digit=len(str(n))
+d=b%pow(10,num_of_digit)
+
+
 if(d==n):
-    print('Automorphic Number')
+    print("Automorphic Number")
 else:
-    print('Not an Automorphic Number')
+    print("Not an Automorphic Number")
