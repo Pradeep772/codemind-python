@@ -7,7 +7,7 @@ while n>0:
     n=n//10
 for ele in arr:
     if arr.count(ele)>1:
-        print('Not Unique Number')
+        print("Not Unique Number")
         break
 else:
-    print('Unique Number')
+    print("Unique Number")
