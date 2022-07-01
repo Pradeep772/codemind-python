@@ -1,12 +1,13 @@
+def pal(n):
+    s=[int(i) for i in str(n)]
+    m=s[::-1]
+    y=''.join([str(i) for i in m])
+    x=int(y)
+    return x
 n=int(input())
-rev=0
-temp=n
-while(n!=0):
-    d=n%10
-    rev=(rev*10)+d
-    n=n//10
-n=temp
-if rev==n:
+p=pal(n)
+if p==n:
     print(True)
 else:
     print(False)
+
